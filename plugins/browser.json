@@ -1,0 +1,31 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "cordova-plugin-console": {
+            "PACKAGE_NAME": "com.domoscio.mobile"
+        },
+        "cordova-plugin-statusbar": {
+            "PACKAGE_NAME": "com.domoscio.mobile"
+        },
+        "cordova-plugin-splashscreen": {
+            "PACKAGE_NAME": "com.domoscio.mobile"
+        },
+        "phonegap-plugin-push": {
+            "SENDER_ID": "85075801930",
+            "PACKAGE_NAME": "com.domoscio.android"
+        },
+        "cordova-plugin-network-information": {
+            "PACKAGE_NAME": "com.domoscio.android"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.domoscio.android"
+        }
+    },
+    "dependent_plugins": {}
+}

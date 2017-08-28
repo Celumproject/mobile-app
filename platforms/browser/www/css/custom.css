@@ -1,0 +1,61 @@
+/*----Couleur thème à appliquer----*/
+
+/*---_Couleur principale à modifier
+/*----Couleurs secondaires à appliquer----*/
+
+
+.writing-navbar{
+    color:white;
+}
+
+.logo-navbar{
+    color:white;
+}
+
+.writing-home-page{
+    color:white;
+}
+
+.logo-home-page{
+    color:white;
+}
+
+.number-button-review{
+    color:white;
+}
+
+.login-button{
+    color:white
+}
+
+.loading-text{
+    color:white;
+}
+
+/*----Autres styles personnalisables----*/
+
+.button-review{
+    background-color:#1abc9c !important;
+}
+
+.logo-menu-home-page{
+    color:white;
+    background-color:#00add1;         /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+    padding-top: 4px;
+    padding-right: 14px;
+    padding-bottom: 4px;
+    padding-left: 14px;
+    border-radius: 50%;
+    border:1px solid white;
+}
+
+.logo-sync{
+    color:white;
+    background-color:#00add1;         /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+    padding-top: 2px;
+    padding-right: 7px;
+    padding-bottom: 6px;
+    padding-left: 7px;
+    border-radius: 50%;
+    border:1px solid white;
+}

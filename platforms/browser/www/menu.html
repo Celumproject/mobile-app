@@ -1,0 +1,53 @@
+<!-- We don't need a full layout in this file because this page will be parsed with Ajax. -->
+
+<div class="pages">
+    <div data-page="menu" class="page navbar-fixed">
+        
+        <div class="page-content">
+            <div class="content-block">
+                <form id="menu-form" class="list-block">
+                    <ul>
+                        <!-- Text inputs -->
+                        <li>
+                            <div class="item-content">
+                                <div class="item-media"><i class="icon f7-icons">bell</i></div>
+                                <div class="item-inner">
+                                    <div id="notif-text-menu" class="item-title label"></div>
+                                    <div class="item-input">
+                                        <label for="notif-item" class="label-switch">
+                                            <input type="checkbox" name="notifications" id="notif-item" value="yes" onclick="changeNotif()">
+                                            <div class="checkbox"></div>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item-content">
+                                <div class="item-media"><i class="icon f7-icons">world</i></div>
+                                <div class="item-inner">
+                                    <div id="lang-text-menu" class="item-title label"></div>
+                                    <div class="item-input">
+                                        <select name="language" onchange="changeLanguage()">
+                                            <option value="fr">Français</option>
+                                            <option value="en">English</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </form>
+                <div class="deconnexion-block">
+                    <center>
+                        <a href="index.html" class="open-login-screen">
+                            <div class="button ripple">
+                                <span id="logout" class=""></span>
+                            </div>
+                        </a>
+                    </center>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

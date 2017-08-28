@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "451752671060",
+    "firebase_url": "https://domoscio-app-test.firebaseio.com",
+    "project_id": "domoscio-app-test",
+    "storage_bucket": "domoscio-app-test.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:451752671060:android:23a6ae971789c888",
+        "android_client_info": {
+          "package_name": "com.domoscio.android"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "451752671060-i3urimt438aidlucb5pn64lqat68jjlb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAErfSGIQQ-YLHqSqeVheQIpIGNjP_dyCA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

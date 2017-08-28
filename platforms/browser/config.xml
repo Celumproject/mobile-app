@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.domoscio.android" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>Domoscio</name>
+    <description>
+        A basic Framework7 template for PhoneGap.
+    </description>
+    <author email="contact@domoscio.com" href="https://domoscio.com">
+        Domoscio SA
+    </author>
+    <content src="index.html" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    <allow-navigation href="https://www.youtube.com/embed/*" />
+    <access origin="*" />
+    <preference name="SplashScreenDelay" value="4000" />
+    <preference name="DisallowOverscroll" value="true" />
+    <preference name="android-build-tool" value="gradle" />
+    <preference name="AllowInlineMediaPlayback" value="true" />
+    <preference name="OpenAllWhitelistURLsInWebView" value="true" />
+    <preference name="MediaPlaybackRequiresUserAction" value="false" />
+    <preference name="stay-in-webview" value="true" />
+    <preference name="EnableViewportScale" value="true" />
+</widget>

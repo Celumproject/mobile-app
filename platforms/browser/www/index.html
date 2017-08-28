@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--
+        Customize this policy to fit your own app's needs. For more guidance, see:
+            https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
+        Some notes:
+            * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+            * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+            * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+                * Enable inline JS: add 'unsafe-inline' to default-src
+        -->
+    <meta http-equiv="Content-Security-Policy" content="default-src * gap://ready file:; style-src 'self' 'unsafe-inline' *; script-src 'self' 'unsafe-inline' 'unsafe-eval' *">
+    <!-- Required meta tags-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="blue">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    
+
+    <!-- Your app title -->
+    <title>Domoscio Mobile</title>
+
+    <script src="https://www.gstatic.com/firebasejs/4.1.3/firebase.js"></script>
+    <link rel="stylesheet" href="lib/framework7/css/framework7-icons.css">
+    <link rel="stylesheet" href="lib/please-wait/build/please-wait.css">
+    <script type='text/javascript' src='js/xml2json.min.js'></script>
+    <script type='text/javascript' src='js/qti1_2.js'></script>
+    <script type='text/javascript' src='js/qti2.js'></script>
+
+
+    <!-- This template defaults to the iOS CSS theme. To support both iOS and material design themes, see the Framework7 Tutorial at the link below:
+        http://www.idangero.us/framework7/tutorials/maintain-both-ios-and-material-themes-in-single-app.html
+     -->
+</head>
+
+<body>
+    <!-- Status bar overlay for full screen mode (PhoneGap) -->
+    <div class="statusbar-overlay"></div>
+
+    <!-- Panels overlay-->
+    <div class="panel-overlay"></div>
+    <!-- Left panel with reveal effect-->
+    <div class="panel panel-left panel-reveal">
+        <div class="content-block">
+            <p>Left panel content goes here</p>
+        </div>
+    </div>
+
+    <!-- Views -->
+    <div class="views">
+        <!-- Your main view, should have "view-main" class -->
+        <div class="view view-main">
+            <!-- Top Navbar-->
+            <div class="navbar">
+                <div class="navbar-inner">
+                    <div class="left">
+
+                    </div>
+                    <div id="testsession" class="center sliding writing-navbar"> </div>
+                    <div class="right">
+                        <a id="right_navbar_link" href="" class="link">
+                            <i id="right_navbar_logo" class="f7-icons logo-navbar"></i>
+                            <span id="right_navbar_text" class="writing-navbar"> </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- Pages container, because we use fixed-through navbar and toolbar, it has additional appropriate classes-->
+            <div class="pages navbar-through">
+                <!-- Page, "data-page" contains page name -->
+                <div data-page="index" class="page page-bg-img">
+                    <!-- Scrollable page content -->
+                    <div class="page-content pull-to-refresh-content" data-ptr-distance="55">
+                        <!-- Default pull to refresh layer-->
+                        <div class="pull-to-refresh-layer">
+                            <div class="preloader"></div>
+                        </div>
+                        <div class="content-block">
+                            <div class='welcome-block'>
+                                <center>
+                                    <h1 id="welcome" class="writing-home-page " style="font-weight:300"> </h1>
+                                </center>
+                            </div>
+                            <div class='reviews-block'>
+                                <center>
+                                    <h5 id="youhave" class="writing-home-page majuscule"></h5>
+                                    <a href="session.html" id="go-test" class="button button-fill button-circle active button-review">
+                                        <span id="index-nb-reviews" class="number-button-review"></span>
+                                    </a>
+                                    <h5 class="writing-home-page majuscule"> <span id="rappel-sg-pl"> </span> </h5>
+                                </center>
+                            </div>
+                            
+                            <div class="menu-item-block">
+                                <div class="">
+                                    <a href="menu.html" class="">
+                                        <i class="f7-icons size-22 logo-menu-home-page">more_vertical</i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Should be a direct child of BODY -->
+    <div class="login-screen modal-in">
+        <!-- Default view-page layout -->
+        <div class="view">
+            <div class="page page-bg-blur-img">
+                <!-- page-content has additional login-screen content -->
+                <div class="page-content content-block login-screen-content">
+                    <div id="login" class="login-screen-title writing-home-page"></div>
+                    <!-- Login form -->
+                    <form id="login-form" action="#" method="POST">
+                        <div class="list-block no-after">
+                            <ul>
+                                <li class="item-content">
+                                    <div class="item-inner">
+                                        <div class="item-title label"><i class='f7-icons logo-home-page'>person_fill</i></div>
+                                        <div class="item-input">
+                                            <input id="email_field" type="email" name="" placeholder="" class="writing-home-page">
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="item-content">
+                                    <div class="item-inner">
+                                        <div class="item-title label"><i class='f7-icons logo-home-page'>lock_fill</i></div>
+                                        <div class="item-input">
+                                            <input id="password_field" type="password" name="" placeholder="" class="writing-home-page">
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                            </div>
+                            <div class="list-block">
+                            <ul>
+                                <li>
+                                    <a id="login_button" href="#" class="item-link list-button login-button ripple writing-home-page form-to-data"></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="lib/please-wait/build/please-wait.min.js"></script>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="lib/framework7/js/framework7.min.js"></script>
+    <script type="text/javascript" src="js/config.js"></script>
+    <script type="text/javascript" src="js/init.js"></script>
+    <script type='text/javascript' src='js/langues.js'></script>
+    <script type='text/javascript' src='js/util-functions.js'></script>
+    <script type='text/javascript' src='js/menu.js'></script>
+    <script type="text/javascript" src="js/my-app.js"></script>
+    <script type='text/javascript' src='js/login-user.js'></script>
+    <script type='text/javascript' src='js/dialogue-api.js'></script>
+    <script type='text/javascript' src='js/prepare-test-session.js'></script>
+    <script type='text/javascript' src='js/classe-question-choix-multiples.js'></script>
+</body>
+
+</html>

@@ -1,0 +1,35 @@
+/*----Couleur thème par défaut à overrider----*/
+
+
+/*>>>>1-INDIQUER la couleur : <<<<<
+ #rrvvbb >#009dcc
+ rgba    >(00,157,204)
+*/
+
+
+/*>>>>>2-Remplacer la couleur ci-après avec le code rgba (qui permet de conserver une opacité de 0,5)<<<<<*/
+.label-switch input[type=checkbox]:checked+.checkbox{background:rgba(0,157,204,.5)}
+
+
+/*>>>>>3-Remplacer toutes les couleurs ci-dessous par le code #rrvvbb de la couleur du thème<<<<<*/
+    /*custom.css*/
+.background-color-theme{background-color:#009dcc;}
+.color-theme{color:#009dcc;}
+.swiper-pagination-bullet {border-color: #009dcc;}
+.swiper-pagination .swiper-pagination-bullet-active {background: #009dcc;border-color: #009dcc;}
+input:checked+.label-radio,input:checked+.label-checkbox {background: #009dcc;color: #fff;}
+input:checked+div+div { font-weight: bold; color: #009dcc;}
+
+
+/*framework7.material.min.css*/
+a{color:#009dcc}
+.navbar,.subnavbar,.toolbar{background:#009dcc}
+.label-switch input[type=checkbox]:checked+.checkbox:after{background:#009dcc}
+.button{color:#009dcc}
+label.label-radio i.icon-form-radio:after{background-color:#009dcc}
+label.label-radio input[type=checkbox]:checked+.item-media i.icon-form-radio,label.label-radio input[type=checkbox]:checked~.item-after i.icon-form-radio,label.label-radio input[type=checkbox]:checked~.item-inner i.icon-form-radio,label.label-radio input[type=radio]:checked+.item-media i.icon-form-radio,label.label-radio input[type=radio]:checked~.item-after i.icon-form-radio,label.label-radio input[type=radio]:checked~.item-inner i.icon-form-radio{border-color:#009dcc}
+label.label-radio input[type=checkbox]:checked+.item-media i.icon-form-radio:after,label.label-radio input[type=checkbox]:checked~.item-after i.icon-form-radio:after,label.label-radio input[type=checkbox]:checked~.item-inner i.icon-form-radio:after,label.label-radio input[type=radio]:checked+.item-media i.icon-form-radio:after,label.label-radio input[type=radio]:checked~.item-after i.icon-form-radio:after,label.label-radio input[type=radio]:checked~.item-inner i.icon-form-radio:after{background-color:#009dcc}
+label.label-checkbox input[type=checkbox]:checked+.item-media i.icon-form-checkbox,label.label-checkbox input[type=checkbox]:checked~.item-after i.icon-form-checkbox,label.label-checkbox input[type=checkbox]:checked~.item-inner i.icon-form-checkbox,label.label-checkbox input[type=radio]:checked+.item-media i.icon-form-checkbox,label.label-checkbox input[type=radio]:checked~.item-after i.icon-form-checkbox,label.label-checkbox input[type=radio]:checked~.item-inner i.icon-form-checkbox{border-color:#ffffff;background-color:#009dcc}
+
+    /*framework7.ios.min.css*/
+.button{border:1px solid #009dcc;color:#009dcc;border-radius:5px}
