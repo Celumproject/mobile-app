@@ -122,16 +122,15 @@ function refresh_home_words(nb_reviews){
     $$("#logout").html(logout);
     $$("#index-username").html(localStorage.getItem("firstname"));
     $$("#index-nb-reviews").html(nb_reviews);
-    var bouton_session = document.getElementById('go-test');
     if (nb_reviews===0){
-        if (!bouton_session.classList.contains('disabled') ) {
-            bouton_session.classList.add('disabled')
+        if (!$$("#go-test").hasClass('disabled')) {
+            $$("#go-test").addClass('disabled');
         }
         $$("#rappel-sg-pl").html( review_sg );
     }
     else {
-        if (bouton_session.classList.contains('disabled') ) {
-            bouton_session.classList.remove('disabled')
+        if ($$("#go-test").hasClass('disabled')) {
+            $$("#go-test").removeClass('disabled')
         }
         if (nb_reviews===1){
             $$("#rappel-sg-pl").html( review_sg );
