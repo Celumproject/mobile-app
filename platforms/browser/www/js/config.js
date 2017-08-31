@@ -3,6 +3,8 @@ Voici le fichier qui regroupe l'ensemble de la marche à suivre pour individuali
 Il suffit de suivre ce fichier dans l'ordre, ligne par ligne !
 */
 
+// Changer l'ID de l'application com.domoscio.nomdelappli dans le fichier config.XML
+
 // Identifiants de connexion à l'instance de l'API
 var version_API = 2; //1 pour la v1, 2 pour la v2.
 var instance_id = 4;
@@ -82,6 +84,7 @@ function isUser(e, loginData){
                     var doc = e.responseXML;
                     localStorage.setItem("name", doc.getElementsByTagName(user_name_field_name)[0].childNodes[0].nodeValue);
                     localStorage.setItem("firstname", doc.getElementsByTagName(user_firstname_field_name)[0].childNodes[0].nodeValue);
+                /********************************************************************************************************/
                     localStorage.setItem(student_identification_field_name, 887); //user_id_field_name. Il faut trouver le bon champ. 887v2 2v1
             }
         });

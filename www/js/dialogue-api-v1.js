@@ -107,7 +107,7 @@ function getReviewDate(knowledge_node_student_id){
     var date;
     $.ajax({
         method: "GET",
-        url: "http://stats-engine.domoscio.com/v1/instances/" + instance_id + "/knowledge_node_students",
+        url: "http://stats-engine.domoscio.com/v1/instances/" + instance_id + "/knowledge_node_students/" + knowledge_node_student_id,
         data: "token="+token,
         dataType : 'json',
         async: false,
